@@ -26,11 +26,12 @@ div {
 }
 
 input {
-  width: 80%;
-  height: 50px;
+  width: 90%;
+  height: 20px;
   padding-top: 7px;
   padding-bottom: 7px;
   margin-left: 40px;
+  margin: 20px;
 }
 
 button {
@@ -205,11 +206,8 @@ button {
   text-align: center;
 }
 nav {
-  background-color: aliceblue;
+  background-color: rgb(48, 48, 48);
   height: 30px;
-}
-
-p {
 }
 
 .parent {
@@ -228,4 +226,13 @@ p {
 
 button.button {
   margin-left: 140px;
+}
+
+.form {
+  position: relative;
+  left: 50px;
+}
+
+ul {
+  text-align: center;
 }

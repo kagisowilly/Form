@@ -16,7 +16,7 @@
         display: inline-block;
         margin: 50px;
         position: relative;
-        top: 50px
+        top: 50px;
     }
 
     body {
@@ -24,6 +24,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
+        background-position: center;
 
     }
 
@@ -51,10 +52,11 @@
     }
 
     .flip-card-front {
-        background-color: #bbb;
+        /* background-color: rgb(0, 0, 0); */
         color: black;
-        height: 50px;
-        width: 50px;
+        height: 250px;
+        width: 250px;
+        /* overflow: hidden; */
     }
 
     .flip-card-back {
@@ -84,15 +86,23 @@
         display: inline;
         color: rgb(255, 255, 255);
         font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
         padding-right: 20px;
         font-size: large;
-        position: relative;
-        right: 850px;
+        /* position: relative;
+        right: 850px; */
+        text-align: center;
     }
 
     nav {
-        background-color: aliceblue;
+        background-color: rgb(55, 56, 56);
         height: 30px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
     }
 </style>
 
@@ -113,47 +123,88 @@
     <h1 class="heading">Testimonials</h1>
     <h3>Hover over the images below to see tesimonials</h3>
 
-    <div>
-
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="IMG-20211007-WA0004.jpg" alt="Kagiso">
-                </div>
-                <div class="flip-card-back">
-                    <h1>Lilitha Mantini</h1>
-                    <p>Backend Developer</p>
-                    <p>Smart guy</p>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="profile.jpg" alt="Kagiso">
-                </div>
-                <div class="flip-card-back">
-                    <h1>Azabenathi Pupuma</h1>
-                    <p>Full Stack Developer</p>
-                    <p>Hard worker</p>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="IMG-20211007-WA0004.jpg" alt="Kagiso">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Lilitha Mantini</h1>
+                        <p>Backend Developer</p>
+                        <p>Smart guy</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="IMG_20210627_090912.jpg" alt="Kagiso">
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="profile.jpg" alt="Kagiso">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Azabenathi Pupuma</h1>
+                        <p>Full Stack Developer</p>
+                        <p>Hard worker</p>
+                    </div>
                 </div>
-                <div class="flip-card-back">
-                    <h1>Kagiso Mphayi</h1>
-                    <p>Frontend Developer</p>
-                    <p>Humble guy</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="IMG_20210627_090912.jpg" alt="Kagiso">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Kagiso Mphayi</h1>
+                        <p>Frontend Developer</p>
+                        <p>Reliable guy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="IMG-20211008-WA0004.jpg" alt="Kagiso">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Jude Julius</h1>
+                        <p>Backend Developer</p>
+                        <p>Humble guy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="IMG-20211008-WA0006.jpg" alt="Kagiso">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Bulela Gomoshe</h1>
+                        <p>Full stack Developer</p>
+                        <p>Great Leader</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="IMG-20211008-WA0005.jpg" alt="Kagiso">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Xola Magatya</h1>
+                        <p>Frontend Developer</p>
+                        <p>Always aiming high</p>
+                    </div>
                 </div>
             </div>
         </div>
